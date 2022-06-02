@@ -1,16 +1,16 @@
 [
   {
-    "title": "Music Near Me",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area."
+    "title": "Free Parking",
+    "description": "A mobile app that shows all the free parking locations in a certain area"
     
   },
   {
-    "title": "The Ultimate Tech Quiz",
-    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!"
+    "title": "Weather Dashboard",
+    "description": "An article that walks you through how to build your own weather app"
     
   },
   {
-    "title": "Roll 'Em Up",
-    "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes."
+    "title": "Rock Paper Scissors",
+    "description": "Tech blog on how to build a rock paper scissor game."
   }
 ]
