@@ -21,11 +21,11 @@ Comment.init(
     },
     comment_user: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
     },
     comment_info: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
     },
   },
   {

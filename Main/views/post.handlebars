@@ -1,7 +1,6 @@
 <div class="text-center">
   <h2>{{user.name}}</h2>
   <p>{{description}}</p>
-  <p>{{comment.comment_info}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
 </div>
 
@@ -12,7 +11,21 @@
   Leave a comment!
   </textarea>
   </div>
-  <input type="submit" value="Submit">
+<div>
+  {{#each comments as |comment|}}
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <h4><a href="/post/{{post.id}}">{{comment.comment_info}}</a></h4>
+        <h4><a href="/post/{{post.id}}">{{comment.comment_user}}</a></h4>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-sm btn-danger" data-id="{{post.id}}">DELETE</button>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
+  <input type="submit" data-id="{{id}}" id="submitComment" value="Submit">
   </form>
 </div>
     

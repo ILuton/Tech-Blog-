@@ -1,11 +1,11 @@
 const router = require('express').Router();
 const { Comment } = require('../../models');
 
-router.post('/', async (req, res) => {
+router.post(`/:id`, async (req, res) => {
     try {
       const newComment = await Comment.create({
         ...req.body,
-        comment_user: req.session.user_id,
+        comment_user: req.session.user_name,
         post_id: req.params.id
       });
   
@@ -15,3 +15,5 @@ router.post('/', async (req, res) => {
     }
   });
   
+
+  module.exports = router;

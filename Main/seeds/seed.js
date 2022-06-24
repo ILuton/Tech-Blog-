@@ -13,7 +13,8 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  for (const post of postData) {
+
+  for (let post of postData) {
     await Post.create({
       ...post,
       user_id: users[Math.floor(Math.random() * users.length)].id,
@@ -21,10 +22,12 @@ const seedDatabase = async () => {
     })
   }
 
-  await Comment.bulkCreate(commentData, {
-    individualHooks: true,
-    returning: true,
+  for (const comment of commentData) {
+    await Comment.create({
+      ...comment,
+      comment_id: post[Math.floor(Math.random() * post.length)].id,
   });
+}
 
   process.exit(0);
 };
