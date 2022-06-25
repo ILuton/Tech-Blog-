@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=Staatliches&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/css/jass.css">
   <link rel="stylesheet" href="/css/style.css">
@@ -30,13 +31,13 @@
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/dashboard">Dashboard</a> |
-        <a href="/">Homepage</a> |
-        <button class="no-button" id="logout">logout</button>
+        <a href="/dashboard" class="navLink">Dashboard</a> |
+        <a href="/" class="navLink">Homepage</a> |
+        <button class="no-button navLink" id="logout">logout</button>
         {{else}}
-        <a href="/">Homepage</a> |
-        <a href="/dashboard">Dashboard</a> |
-        <a href="/login">Login</a>
+        <a href="/" class="navLink">Homepage</a> |
+        <a href="/dashboard" class="navLink">Dashboard</a> |
+        <a href="/login"class="navLink">Login</a>
         {{/if}}
       </nav>
     </header>

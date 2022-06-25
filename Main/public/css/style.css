@@ -9,13 +9,13 @@ header {
   border: none;
   padding: 0;
   cursor: pointer;
-  color: #1b89bc;
+  color: #eaeced;
   text-decoration: none;
   font-size: 100%;
 }
 
 .no-button:hover {
-  color: #065b83;
+  color: #d7d7d7;
   text-decoration: underline;
 }
 
@@ -29,6 +29,20 @@ header {
 .title {
   font-family: 'Rubik Moonrocks', cursive;
   font-size: 70px;
-  color: rgba(28, 24, 2, 0.155);
+  color: rgba(28, 24, 2, 0.458);
 }
 
+.navLink {
+  margin: 3px;
+  font-size: 20px;
+  font-family: 'Staatliches', cursive;
+  color: black;
+}
+
+.postBox {
+  border: 2px solid black;
+  padding: 15px;
+  border-radius: 10px;
+
+  
+}
