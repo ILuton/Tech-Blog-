@@ -1,27 +1,20 @@
 <div class="text-center">
-  <h2>{{user.name}}</h2>
-  <p>{{description}}</p>
+  <h2 class="postDescription" >{{title}}</h2>
+  <p >{{description}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
 </div>
 
 <div class="comment text-center">
   <form action="/" method="post">
   <div>
-  <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
-  Leave a comment!
-  </textarea>
+  <textarea placeholder="Leave a comment" name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;"></textarea>
   </div>
   <input type="submit" data-id="{{id}}"  data-name="{{user.name}}" id="submitComment" value="Submit">
 <div>
   {{#each comments as |comment|}}
-    <div class="row mb-2 postBox">
-      <div class="col-md-8">
-        <h4><a href="/post/{{post.id}}">{{comment.comment_info}}</a></h4>
-        <h4><a href="/post/{{post.id}}">{{comment.comment_user}}</a></h4>
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{post.id}}">DELETE</button>
-      </div>
+    <div class="commentBox">
+        <h4 class="commentInfo">{{comment.comment_info}}</h4>
+        <h4 class="commentPerson">Comment left By: {{comment.comment_user}}</h4>
     </div>
     {{/each}}
   </div>

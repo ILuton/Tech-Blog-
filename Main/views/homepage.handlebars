@@ -2,13 +2,13 @@
 {{#each posts as |post| }}
 <div class="row mb-4 project postBox">
   <div class="col-md-5">
-    <h2>
+    <h2 class="homepageTitle">
       <a href="/post/{{post.id}}">{{post.title}}</a>
     </h2>
-    <p>Created by {{post.user.name}} on {{format_date post.date_created}}</p>
+    <p class="createdBy">Created by {{post.user.name}} on {{format_date post.date_created}}</p>
   </div>
   <div class="col-md-7">
-    <p>
+    <p class="homepageDescription">
       {{post.description}}
     </p>
   </div>
