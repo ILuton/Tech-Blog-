@@ -2,7 +2,7 @@
 
 ## Description
 
-The purpose of this project was to practice building a front end application. I wanted to include login, logout, and signup functionality. One logged in the user can create a new blog post that can be seen by everyone on the homepage. Users can also leave comment on each others posts. 
+The purpose of this project was to practice building a front end application. I wanted to include login, logout, and signup functionality. Once logged in the user can create a new blog post that can be seen by everyone on the homepage. Users can also leave comment on each others posts. 
 
 ## Table of Contents
 
